@@ -62,7 +62,7 @@ def get_similar_games(game_name,user_rating):
 @app.route('/', methods = ['POST'])
 def home():
     a = request.get_json(force=True)
-    # a = jsonify(a)
+
     print(a)
     in_lst = []
     for key,value in a.items():
@@ -72,11 +72,7 @@ def home():
         else:
             tup = (int(value[0]),int(value[1]))
             in_lst.append(tup)
-    # print(in_lst)
-    # print(request)
-    # pprint(a)
-    # print(a)
-    # return render_template("./index.html")
+    
 
     similar_games = pd.DataFrame()
 
