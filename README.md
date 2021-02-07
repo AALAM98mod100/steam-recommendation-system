@@ -15,7 +15,7 @@ This was achieved simply by mapping the ratings linearly to  the range $[0,\frac
 This dataset is generated using an inner join of the appid of the gamee in our dataset to the media dataset containing header images for the games. This dataset is used to retreive media images for the front-end in browser.
 
 ## __Front End__
-The front end is made using basic HTML/CSS using the fetch API and Flask on the Python side. The process is generally straightforward but not without its hiccups as this was my first time implementing cross-communication between the front-end and the back-end.
+The front end is made using HTML/CSS and the fetch API and Flask on the Python side. The process is generally straightforward but not without its hiccups as this was my first time implementing cross-communication between the front-end and the back-end.
 
 ## To Run
 Simply clone the repository, the code from *main.ipynb* has been copied into *website.py* due to Flask requirements. 
